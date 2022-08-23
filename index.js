@@ -1,4 +1,6 @@
-require("dotenv").config();
+const dotenv = require("dotenv");
+const path = require("path");
+dotenv.config({ path: path.join(__dirname, "./.env") });
 // Require the necessary discord.js classes
 const { Client, GatewayIntentBits } = require("discord.js");
 const today = new Date();
